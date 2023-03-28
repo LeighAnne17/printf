@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 void print_buffer(char buffer[], int *buff_ind);
 
@@ -10,7 +11,7 @@ void print_buffer(char buffer[], int *buff_ind);
 
 int _printf(const char *format, ...)
 {
-	int i, printed = 0, printed_chaers = 0;
+	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	char buffer[BUFF_SIZE];

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /************************* WRITE HANDLE *************************/
 /**
@@ -13,7 +14,7 @@
  * Return: Number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
-	int flags, int width, int precision, int size)
+		int flags, int width, int precision, int size)
 { /* char is stored at left and paddind at buffer's right */
 	int i = 0;
 	char padd = ' ';
